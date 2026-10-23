@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ôn Tập Tiếng Anh Tiểu Học - Favourite Subject & Future Jobs</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font - Quicksand for kid-friendly aesthetics -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f0f9ff;
+        }
+        .card-bounce {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card-bounce:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="text-slate-800 pb-12">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-cyan-500 via-sky-500 to-indigo-500 text-white py-8 px-4 text-center shadow-lg relative overflow-hidden">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <span class="bg-yellow-400 text-slate-900 text-xs sm:text-sm font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">Bài Ôn Tập Tiếng Anh</span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold mt-3 drop-shadow">Favourite Subjects & Future Jobs</h1>
+            <p class="mt-2 text-cyan-100 text-base sm:text-lg">Cùng học từ vựng, ngữ pháp và làm bài tập thật vui nhé! 🌟</p>
+        </div>
+        <!-- Decorative SVG shapes -->
+        <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-white/10 rounded-full blur-xl"></div>
+        <div class="absolute -top-6 -right-6 w-32 h-32 bg-yellow-300/20 rounded-full blur-lg"></div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-5xl mx-auto px-4 mt-8 space-y-12">
+
+        <!-- SECTION 1: VOCABULARY -->
+        <section class="bg-white rounded-3xl p-6 sm:p-8 shadow-md border border-slate-100">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-2xl shadow-inner">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-800">1. Từ Vựng (Vocabulary)</h2>
+                    <p class="text-slate-500 text-sm">Nhấn vào biểu tượng loa <i class="fa-solid fa-volume-high text-amber-500"></i> để nghe phát âm chuẩn nhé!</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="vocab-grid">
+                <!-- Vocab cards populated dynamically or hardcoded -->
+            </div>
+        </section>
+
+
+        <!-- SECTION 2: GRAMMAR STRUCTURES -->
+        <section class="bg-white rounded-3xl p-6 sm:p-8 shadow-md border border-slate-100">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center text-2xl shadow-inner">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-800">2. Mẫu Câu & Cấu Trúc (Grammar)</h2>
+                    <p class="text-slate-500 text-sm">Hỏi đáp về môn học yêu thích và lý do yêu thích môn học</p>
+                </div>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Part A: Favorite Subject -->
+                <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200/80">
+                    <h3 class="text-lg font-bold text-indigo-700 mb-3 flex items-center gap-2">
+                        <span class="w-7 h-7 bg-indigo-600 text-white rounded-full flex items-center justify-center text-sm">A</span>
+                        Hỏi và trả lời về môn học yêu thích
+                    </h3>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Pattern 1 -->
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-2">
+                            <div class="text-xs font-bold text-indigo-500 uppercase tracking-wide">Cấu trúc 1 (Dùng cho "You")</div>
+                            <div class="bg-indigo-50 p-3 rounded-lg border-l-4 border-indigo-500 font-semibold text-slate-700">
+                                <p> What's <span class="text-indigo-600 font-bold">your</span> favourite subject?</p>
+                                <p class="text-slate-500 font-normal text-xs mt-1">↳ It's <span class="text-indigo-600">[tên môn học]</span>.</p>
+                            </div>
+                            <div class="text-sm pt-1">
+                                <span class="font-bold text-slate-700">Ví dụ:</span>
+                                <div class="flex items-center justify-between mt-1 p-2 bg-emerald-50 rounded-lg border border-emerald-100">
+                                    <div>
+                                        <p class="font-semibold text-emerald-900">- What's your favourite subject?</p>
+                                        <p class="font-semibold text-emerald-700">- It's English.</p>
+                                        <p class="text-xs text-slate-500 italic">(Môn học yêu thích của bạn là gì? - Đó là môn Tiếng Anh.)</p>
+                                    </div>
+                                    <button onclick="speakText('What\'s your favourite subject? It\'s English.')" class="w-9 h-9 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center shrink-0 shadow">
+                                        <i class="fa-solid fa-volume-high text-xs"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pattern 2 -->
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-2">
+                            <div class="text-xs font-bold text-indigo-500 uppercase tracking-wide">Cấu trúc 2 (Dùng cho "His / Her")</div>
+                            <div class="bg-indigo-50 p-3 rounded-lg border-l-4 border-indigo-500 font-semibold text-slate-700">
+                                <p> What's <span class="text-indigo-600 font-bold">his / her</span> favourite subject?</p>
+                                <p class="text-slate-500 font-normal text-xs mt-1">↳ It's <span class="text-indigo-600">[tên môn học]</span>.</p>
+                            </div>
+                            <div class="text-sm pt-1">
+                                <span class="font-bold text-slate-700">Ví dụ:</span>
+                                <div class="flex items-center justify-between mt-1 p-2 bg-emerald-50 rounded-lg border border-emerald-100">
+                                    <div>
+                                        <p class="font-semibold text-emerald-900">- What's his favourite subject?</p>
+                                        <p class="font-semibold text-emerald-700">- It's Maths.</p>
+                                        <p class="text-xs text-slate-500 italic">(Môn học yêu thích của anh ấy là gì? - Đó là môn Toán.)</p>
+                                    </div>
+                                    <button onclick="speakText('What\'s his favourite subject? It\'s Maths.')" class="w-9 h-9 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center shrink-0 shadow">
+                                        <i class="fa-solid fa-volume-high text-xs"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part B: Reasons for liking subject -->
+                <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200/80">
+                    <h3 class="text-lg font-bold text-sky-700 mb-3 flex items-center gap-2">
+                        <span class="w-7 h-7 bg-sky-600 text-white rounded-full flex items-center justify-center text-sm">B</span>
+                        Hỏi và trả lời về lý do thích môn học
+                    </h3>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Pattern 1 -->
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-2">
+                            <div class="text-xs font-bold text-sky-500 uppercase tracking-wide">Cấu trúc 1 (Hỏi Bạn "You")</div>
+                            <div class="bg-sky-50 p-3 rounded-lg border-l-4 border-sky-500 font-semibold text-slate-700">
+                                <p> Why <span class="text-sky-600 font-bold">do you</span> like [môn học]?</p>
+                                <p class="text-slate-500 font-normal text-xs mt-1">↳ Because I want to be <span class="text-sky-600">[nghề nghiệp]</span>.</p>
+                            </div>
+                            <div class="text-sm pt-1">
+                                <span class="font-bold text-slate-700">Ví dụ:</span>
+                                <div class="flex items-center justify-between mt-1 p-2 bg-emerald-50 rounded-lg border border-emerald-100">
+                                    <div>
+                                        <p class="font-semibold text-emerald-900">- Why do you like English?</p>
+                                        <p class="font-semibold text-emerald-700">- Because I want to be an English teacher.</p>
+                                        <p class="text-xs text-slate-500 italic">(Tại sao bạn thích tiếng Anh? - Bởi vì tôi muốn trở thành giáo viên tiếng Anh.)</p>
+                                    </div>
+                                    <button onclick="speakText('Why do you like English? Because I want to be an English teacher.')" class="w-9 h-9 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center shrink-0 shadow">
+                                        <i class="fa-solid fa-volume-high text-xs"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pattern 2 -->
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-2">
+                            <div class="text-xs font-bold text-sky-500 uppercase tracking-wide">Cấu trúc 2 (Hỏi Cô ấy/Anh ấy "He/She")</div>
+                            <div class="bg-sky-50 p-3 rounded-lg border-l-4 border-sky-500 font-semibold text-slate-700">
+                                <p> Why <span class="text-sky-600 font-bold">does he / she</span> like [môn học]?</p>
+                                <p class="text-slate-500 font-normal text-xs mt-1">↳ Because he / she <span class="text-sky-600">wants to be</span> [nghề nghiệp].</p>
+                                <p class="text-slate-500 font-normal text-xs">↳ Hoặc: Because he / she <span class="text-sky-600">is good at</span> [hoạt động].</p>
+                            </div>
+                            <div class="text-sm pt-1">
+                                <span class="font-bold text-slate-700">Ví dụ:</span>
+                                <div class="flex items-center justify-between mt-1 p-2 bg-emerald-50 rounded-lg border border-emerald-100">
+                                    <div>
+                                        <p class="font-semibold text-emerald-900">- Why does she like Music?</p>
+                                        <p class="font-semibold text-emerald-700">- Because she wants to be a singer.</p>
+                                        <p class="text-xs text-slate-500 italic">(Tại sao cô ấy thích Âm nhạc? - Bởi vì cô ấy muốn trở thành ca sĩ.)</p>
+                                    </div>
+                                    <button onclick="speakText('Why does she like Music? Because she wants to be a singer.')" class="w-9 h-9 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center shrink-0 shadow">
+                                        <i class="fa-solid fa-volume-high text-xs"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECTION 3: PRACTICE QUIZ -->
+        <section class="bg-white rounded-3xl p-6 sm:p-8 shadow-md border border-slate-100">
+            <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-100">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl shadow-inner">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-800">3. Bài Tập Trắc Nghiệm (10 Câu)</h2>
+                        <p class="text-slate-500 text-sm">Chọn đáp án đúng nhất để kiểm tra kiến thức nhé!</p>
+                    </div>
+                </div>
+                <!-- Score badge -->
+                <div class="hidden sm:flex flex-col items-end">
+                    <span class="text-xs text-slate-400 font-bold uppercase">Điểm số</span>
+                    <span id="score-display" class="text-2xl font-black text-emerald-600">0 / 10</span>
+                </div>
+            </div>
+
+            <!-- Quiz items container -->
+            <form id="quiz-form" class="space-y-6">
+                <div id="quiz-container" class="space-y-6">
+                    <!-- Dynamic rendering of questions -->
+                </div>
+
+                <!-- Submit / Reset Buttons -->
+                <div class="pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div class="text-lg font-bold text-slate-700 sm:hidden">
+                        Điểm của bạn: <span id="mobile-score-display" class="text-emerald-600">0 / 10</span>
+                    </div>
+                    <div class="flex gap-3 w-full sm:w-auto">
+                        <button type="button" id="submit-btn" onclick="checkQuiz()" class="flex-1 sm:flex-none px-8 py-3.5 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-2xl shadow-md shadow-emerald-200 transition text-center">
+                            <i class="fa-solid fa-paper-plane mr-2"></i>Nộp Bài & Kiểm Tra
+                        </button>
+                        <button type="button" id="retry-btn" onclick="resetQuiz()" class="hidden flex-1 sm:flex-none px-6 py-3.5 bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold rounded-2xl transition text-center">
+                            <i class="fa-solid fa-rotate-right mr-2"></i>Làm Lại
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center mt-12 text-slate-400 text-sm">
+        <p>Giao diện học tập Tiếng Anh Tiểu Học • Dễ hiểu & Tương tác cao</p>
+    </footer>
+
+    <!-- JavaScript code -->
+    <script>
+        // Vocabulary list
+        const vocabList = [
+            { word: "favourite", phonetic: "/'feɪvərɪt/", meaning: "Yêu thích", icon: "fa-heart", color: "bg-rose-50 text-rose-500" },
+            { word: "because", phonetic: "/bɪ'kəz/", meaning: "Bởi vì", icon: "fa-circle-question", color: "bg-purple-50 text-purple-500" },
+            { word: "want to", phonetic: "/wɒnt tuː/", meaning: "Muốn", icon: "fa-bullseye", color: "bg-blue-50 text-blue-500" },
+            { word: "why", phonetic: "/waɪ/", meaning: "Tại sao", icon: "fa-question", color: "bg-amber-50 text-amber-500" },
+            { word: "an English teacher", phonetic: "/ən ˈɪŋɡlɪʃ ˈtiːtʃə/", meaning: "Giáo viên tiếng Anh", icon: "fa-chalkboard-user", color: "bg-emerald-50 text-emerald-500" },
+            { word: "a singer", phonetic: "/ə ˈsɪŋə/", meaning: "Ca sĩ", icon: "fa-microphone", color: "bg-pink-50 text-pink-500" },
+            { word: "a painter", phonetic: "/ə ˈpeɪntə/", meaning: "Họa sĩ", icon: "fa-palette", color: "bg-orange-50 text-orange-500" },
+            { word: "a maths teacher", phonetic: "/ə mæθs ˈtiːtʃə/", meaning: "Giáo viên toán", icon: "fa-calculator", color: "bg-indigo-50 text-indigo-500" },
+            { word: "good at", phonetic: "/ɡʊd æt/", meaning: "Giỏi về", icon: "fa-star", color: "bg-yellow-50 text-yellow-600" },
+            { word: "write a story", phonetic: "/raɪt ə ˈstɔːri/", meaning: "Viết một câu chuyện", icon: "fa-book", color: "bg-teal-50 text-teal-500" },
+            { word: "letter", phonetic: "/ˈletə/", meaning: "Bức thư / lá thư", icon: "fa-envelope", color: "bg-sky-50 text-sky-500" }
+        ];
+
+        // Quiz questions
+        const quizData = [
+            {
+                id: 1,
+                question: "What's _____ favourite subject? - It's English.",
+                options: ["your", "you", "yours"],
+                answer: 0,
+                explanation: "Hỏi 'Môn học yêu thích của bạn': Ta dùng tính từ sở hữu 'your'."
+            },
+            {
+                id: 2,
+                question: "Why _____ you like Maths? - Because I want to be a maths teacher.",
+                options: ["does", "do", "are"],
+                answer: 1,
+                explanation: "Với chủ ngữ 'you', ta dùng trợ từ 'do' trong câu hỏi."
+            },
+            {
+                id: 3,
+                question: "What's her favourite subject? - _____ Maths.",
+                options: ["She's", "It's", "Her"],
+                answer: 1,
+                explanation: "Để trả lời cho tên môn học yêu thích, ta dùng 'It's + [tên môn]'."
+            },
+            {
+                id: 4,
+                question: "Why does she like Art? - _____ she wants to be a painter.",
+                options: ["Why", "Because", "So"],
+                answer: 1,
+                explanation: "Trả lời cho câu hỏi lý do 'Why', ta bắt đầu bằng 'Because'."
+            },
+            {
+                id: 5,
+                question: "Why do you like English? - Because I want to be an _____ teacher.",
+                options: ["English", "maths", "music"],
+                answer: 0,
+                explanation: "Thích Tiếng Anh vì muốn trở thành giáo viên Tiếng Anh (an English teacher). Dùng 'an' trước từ bắt đầu bằng nguyên âm E."
+            },
+            {
+                id: 6,
+                question: "She wants to be a _____. She likes singing.",
+                options: ["painter", "singer", "maths teacher"],
+                answer: 1,
+                explanation: "Thích hát (singing) nên muốn trở thành ca sĩ (singer)."
+            },
+            {
+                id: 7,
+                question: "He is good at _____ stories.",
+                options: ["write", "writing", "to write"],
+                answer: 1,
+                explanation: "Cấu trúc 'good at + V-ing' (giỏi làm việc gì đó), nên dùng 'writing'."
+            },
+            {
+                id: 8,
+                question: "Why _____ he like Music? - Because he wants to be a singer.",
+                options: ["do", "does", "is"],
+                answer: 1,
+                explanation: "Với chủ ngữ số ít 'he', trong câu hỏi ta dùng trợ từ 'does'."
+            },
+            {
+                id: 9,
+                question: "Câu: \"What's your favourite subject? - It's Art.\" nghĩa là gì?",
+                options: [
+                    "Bạn thích môn học nào? - Mình thích môn Mỹ thuật.",
+                    "Môn học yêu thích của bạn là gì? - Đó là môn Mỹ thuật.",
+                    "Tại sao bạn thích môn Mỹ thuật? - Vì nó hay."
+                ],
+                answer: 1,
+                explanation: "'What's your favourite subject?' = Môn học yêu thích của bạn là gì? 'It's Art' = Đó là môn Mỹ thuật."
+            },
+            {
+                id: 10,
+                question: "Why do you like Vietnamese? - Because I want to write a _____ to my friend.",
+                options: ["letter", "teacher", "singer"],
+                answer: 0,
+                explanation: "Viết một lá thư gửi cho bạn: 'write a letter'."
+            }
+        ];
+
+        // Text-to-Speech function
+        function speakText(text) {
+            if ('speechSynthesis' in window) {
+                // Cancel any ongoing speech
+                window.speechSynthesis.cancel();
+
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'en-US';
+                utterance.rate = 0.85; // slightly slower speed for children
+
+                window.speechSynthesis.speak(utterance);
+            } else {
+                alert("Trình duyệt của bạn không hỗ trợ đọc âm thanh.");
+            }
+        }
+
+        // Render Vocabulary Grid
+        function renderVocab() {
+            const container = document.getElementById('vocab-grid');
+            container.innerHTML = vocabList.map(item => `
+                <div class="card-bounce bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 ${item.color} rounded-xl flex items-center justify-center text-lg shrink-0">
+                            <i class="fa-solid ${item.icon}"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 text-base line-clamp-1">${item.word}</h3>
+                            <p class="text-xs text-indigo-500 font-mono">${item.phonetic}</p>
+                            <p class="text-xs text-slate-500 mt-0.5">${item.meaning}</p>
+                        </div>
+                    </div>
+                    <button onclick="speakText('${item.word.replace(/'/g, "\\'")}')" class="w-9 h-9 bg-slate-100 hover:bg-amber-400 hover:text-white text-slate-600 rounded-full flex items-center justify-center transition shrink-0 shadow-sm" title="Nghe phát âm">
+                        <i class="fa-solid fa-volume-high text-xs"></i>
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        // Render Practice Quiz
+        function renderQuiz() {
+            const container = document.getElementById('quiz-container');
+            container.innerHTML = quizData.map((q, index) => `
+                <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3" id="q-box-${q.id}">
+                    <div class="flex items-start justify-between gap-2">
+                        <p class="font-bold text-slate-800 text-base">
+                            <span class="inline-block px-2.5 py-0.5 bg-indigo-100 text-indigo-700 rounded-lg text-sm mr-1">Câu ${index + 1}</span>
+                            ${q.question}
+                        </p>
+                        <button type="button" onclick="speakText('${q.question.replace(/_____/g, 'blank').replace(/'/g, "\\'")}')" class="text-slate-400 hover:text-indigo-600 text-sm p-1" title="Nghe câu hỏi">
+                            <i class="fa-solid fa-volume-high"></i>
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-1">
+                        ${q.options.map((opt, optIndex) => `
+                            <label class="flex items-center space-x-2 bg-white p-3 rounded-xl border border-slate-200 cursor-pointer hover:border-indigo-300 transition text-sm">
+                                <input type="radio" name="question-${q.id}" value="${optIndex}" class="w-4 h-4 text-indigo-600 focus:ring-indigo-500">
+                                <span class="font-medium text-slate-700">${opt}</span>
+                            </label>
+                        `).join('')}
+                    </div>
+
+                    <!-- Explanation Box (Hidden initially) -->
+                    <div id="explanation-${q.id}" class="hidden p-3 rounded-xl text-xs sm:text-sm mt-2"></div>
+                </div>
+            `).join('');
+        }
+
+        // Check Quiz Answers
+        function checkQuiz() {
+            let score = 0;
+
+            quizData.forEach(q => {
+                const selected = document.querySelector(`input[name="question-${q.id}"]:checked`);
+                const qBox = document.getElementById(`q-box-${q.id}`);
+                const expBox = document.getElementById(`explanation-${q.id}`);
+
+                expBox.classList.remove('hidden', 'bg-emerald-100', 'text-emerald-800', 'bg-rose-100', 'text-rose-800');
+
+                if (selected) {
+                    const userAns = parseInt(selected.value);
+                    if (userAns === q.answer) {
+                        score++;
+                        qBox.classList.remove('border-slate-200/80', 'border-rose-300');
+                        qBox.classList.add('border-emerald-400', 'bg-emerald-50/40');
+                        expBox.classList.add('bg-emerald-100', 'text-emerald-900', 'border', 'border-emerald-200');
+                        expBox.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-600 mr-1"></i> <strong>Chính xác!</strong> ${q.explanation}`;
+                    } else {
+                        qBox.classList.remove('border-slate-200/80', 'border-emerald-400');
+                        qBox.classList.add('border-rose-300', 'bg-rose-50/40');
+                        expBox.classList.add('bg-rose-100', 'text-rose-900', 'border', 'border-rose-200');
+                        expBox.innerHTML = `<i class="fa-solid fa-circle-xmark text-rose-600 mr-1"></i> <strong>Chưa đúng!</strong> Đáp án đúng là: <strong>${q.options[q.answer]}</strong>. ${q.explanation}`;
+                    }
+                } else {
+                    qBox.classList.add('border-amber-300', 'bg-amber-50/40');
+                    expBox.classList.add('bg-amber-100', 'text-amber-900', 'border', 'border-amber-200');
+                    expBox.innerHTML = `<i class="fa-solid fa-triangle-exclamation text-amber-600 mr-1"></i> Bạn chưa chọn câu trả lời! Đáp án đúng là: <strong>${q.options[q.answer]}</strong>.`;
+                }
+            });
+
+            // Update scores
+            document.getElementById('score-display').innerText = `${score} / 10`;
+            document.getElementById('mobile-score-display').innerText = `${score} / 10`;
+
+            // Toggle buttons
+            document.getElementById('retry-btn').classList.remove('hidden');
+        }
+
+        // Reset Quiz
+        function resetQuiz() {
+            document.getElementById('quiz-form').reset();
+            document.getElementById('score-display').innerText = `0 / 10`;
+            document.getElementById('mobile-score-display').innerText = `0 / 10`;
+
+            quizData.forEach(q => {
+                const qBox = document.getElementById(`q-box-${q.id}`);
+                const expBox = document.getElementById(`explanation-${q.id}`);
+
+                qBox.className = "p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3";
+                expBox.classList.add('hidden');
+                expBox.innerHTML = "";
+            });
+
+            document.getElementById('retry-btn').classList.add('hidden');
+        }
+
+        // Initialize on page load
+        window.onload = function() {
+            renderVocab();
+            renderQuiz();
+        };
+    </script>
+</body>
+</html>
